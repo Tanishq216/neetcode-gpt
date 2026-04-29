@@ -3,5 +3,5 @@ class Solution:
         minimizer = init
 
         for _ in range(iterations):
-            minimizer = minimizer - learning_rate* (2*minimizer)
+            minimizer -= learning_rate* (2*minimizer)
         return round(minimizer,5)
